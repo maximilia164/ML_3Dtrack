@@ -100,7 +100,7 @@ for p = 1:numel(listing) %iterate over the different Z stacks
             moments = feature_vec1(mask_inertia); 
             
             %All the features together
-            data = [moments minmax_scaled minpeaks maxpeaks minpeaks+maxpeaks r_minmax radial, Z_vals(j)];
+            data = [moments minmax_scaled minpeaks maxpeaks minpeaks+maxpeaks r_minmax radial Z_vals(j)];
             Dataset = [Dataset; data];
 
         end  
