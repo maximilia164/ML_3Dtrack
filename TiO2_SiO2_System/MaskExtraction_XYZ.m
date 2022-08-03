@@ -3,8 +3,7 @@ clc; close all; clear all
 
 %{
 This script extracts out the masks of swimming particles, for processing as
-necessary in the next steps. For XYZ tracking, stick to decision tree ML
-approach for now (since models trained already)
+necessary in the next steps. 
 
 %}
 
@@ -16,7 +15,7 @@ listing=dir([pp.path '/*.tif']);
 img ={}; 
 img_orig = {};
 
-%KEEP IT SIMPLE STUPID APPROACH
+
 for j=1:numel(listing) %for loop through all the sims
     img{j} = double(imread(listing(j).name));
     img_orig{j} = img{j};
