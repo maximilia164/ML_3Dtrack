@@ -1,5 +1,3 @@
 # ML_3Dtrack
-This repository provides the codes used to extract features from microscopy videos (.m files) and perform feature engineering and model training via 
-the sci-kit learn packages on jupyter. For size constraints, raw videos are not provided, instead the extracted datasets from the videos used for model
-training have been given. The features to be extracted, and the parameters for particle tracking are system dependent, and therefore will require fine-tuning 
-on the behalf of any potential user.
+
+This repository provides the codes used in https://arxiv.org/abs/2206.11710 to extract the features from microscopy videos and train the extremeley randomised decision tree (ERT) model presented. The features are extracted using MATLAB (.m files), while the ERT models are trained using freely available packages on sci-kit learn (Jupyter notebooks). For size constraints, raw videos are not provided, instead the extracted datasets from the videos used for model training are available (.mat files). The codes are therefore specific to the systems studied in https://arxiv.org/abs/2206.11710, and currently are not written in a generalisable format. Typically, the parameters for particle tracking, and the features to be extracted, are system dependent, and therefore will require further investigation from any potential user. In future, efforts will be taken to provide a more general, accessible version of the scripts provided here.
